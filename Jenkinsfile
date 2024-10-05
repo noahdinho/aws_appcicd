@@ -8,7 +8,7 @@ pipeline {
         IMAGE_TAG = 'noahdinho/aws_appcicd'
         IMAGE_VERSION = "${BUILD_NUMBER}"
     }
-    
+
 
 
     stages{
@@ -23,15 +23,7 @@ pipeline {
             sh 'docker images'
         }
       }
-      stage('change'){
-        steps{
-            sh 'echo change'
-        }
-      } 
-      stage('build stage'){
-        steps{
-           ('echo build stage')
-        }
-      }
+      
+    
     }
 }

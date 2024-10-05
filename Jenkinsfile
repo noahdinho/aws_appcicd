@@ -8,6 +8,7 @@ pipeline {
         IMAGE_TAG = 'noahdinho/aws_appcicd'
         IMAGE_VERSION = "${BUILD_NUMBER}"
     }
+    
 
 
     stages{

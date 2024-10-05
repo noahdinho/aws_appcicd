@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
 
     environment{
         BRANCH_NAME = 'main'
@@ -26,5 +26,10 @@ pipeline {
             sh 'echo change'
         }
       } 
+      stage('build stage'){
+        steps{
+           ('echo build stage')
+        }
+      }
     }
 }
